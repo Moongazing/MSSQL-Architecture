@@ -4,18 +4,18 @@ CREATE TABLE Pspec_Type_Enum(
     Name_TR VARCHAR(50)
 )
 INSERT INTO Pspec_Type_Enum(Name,Name_TR)
-VALUES ('PSPEC', 'SÃœREÃ‡'),
-       ('COLLECTION', 'SÃœREÃ‡ GRUBU')
+VALUES ('PSPEC', 'SÜREÇ'),
+       ('COLLECTION', 'SÜREÇ GRUBU')
 CREATE TABLE Role_Text_Enum(
 Id INT PRIMARY KEY IDENTITY(1,1),
 Name VARCHAR(50),
 Name_TR VARCHAR(50));
 INSERT INTO Role_Text_Enum(Name,Name_TR)
-VALUES('MAINTAINER','Ä°ÅžLETMECÄ°'),
-('MANAGER','YÃ–NETÄ°CÄ°'),
-('OWNER','SAHÄ°P'),
+VALUES('MAINTAINER','ÝÞLETMECÝ'),
+('MANAGER','YÖNETÝCÝ'),
+('OWNER','SAHÝP'),
 ('PERSONNEL','PERSONEL'),
-('SUPPLIER','TEDARÄ°KÃ‡Ä°')
+('SUPPLIER','TEDARÝKÇÝ')
 CREATE TABLE Abstract_Objects (
     Id INT IDENTITY(1,1)PRIMARY KEY,
     Name VARCHAR,
@@ -90,18 +90,18 @@ Id INT PRIMARY KEY IDENTITY(1,1),
     Name VARCHAR(50),
     Name_TR VARCHAR(50));
 INSERT INTO Role_Relation_Type_Enum(Name,Name_TR)
-VALUES('PSPEC', 'SÃœREÃ‡'),
-('Manages', 'YÃ¶netir'),
-('System Maintenance Agreement', 'Sistem BakÄ±m SÃ¶zleÅŸmesi'),
-('Operations Agreement', 'Operasyon SÃ¶zleÅŸmesi'),
-('Information Exchange and Action Agreement', 'Bilgi DeÄŸiÅŸimi ve Eylem SÃ¶zleÅŸmesi'),
-('Information Exchange Agreement', 'Bilgi DeÄŸiÅŸimi SÃ¶zleÅŸmesi'),
+VALUES('PSPEC', 'SÜREÇ'),
+('Manages', 'Yönetir'),
+('System Maintenance Agreement', 'Sistem Bakým Sözleþmesi'),
+('Operations Agreement', 'Operasyon Sözleþmesi'),
+('Information Exchange and Action Agreement', 'Bilgi Deðiþimi ve Eylem Sözleþmesi'),
+('Information Exchange Agreement', 'Bilgi Deðiþimi Sözleþmesi'),
 ('Warranty', 'Garanti'),
-('System Usage Agreement', 'Sistem KullanÄ±m SÃ¶zleÅŸmesi'),
-('Operates', 'Ä°ÅŸletir'),
-('Expectation of Data Provision', 'Veri SaÄŸlama Beklentisi'),
-('Information Provision Agreement', 'Bilgi SaÄŸlama SÃ¶zleÅŸmesi'),
-('Expectation of Information Provision', 'Bilgi SaÄŸlama Beklentisi')
+('System Usage Agreement', 'Sistem Kullaným Sözleþmesi'),
+('Operates', 'Ýþletir'),
+('Expectation of Data Provision', 'Veri Saðlama Beklentisi'),
+('Information Provision Agreement', 'Bilgi Saðlama Sözleþmesi'),
+('Expectation of Information Provision', 'Bilgi Saðlama Beklentisi')
 CREATE TABLE Pspecs (
     Pspec_Code VARCHAR(50) PRIMARY KEY,
     Name VARCHAR(50),
